@@ -5,27 +5,27 @@
 
 <!--Header-->
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>The Giant Universe.</h1> 
-    <p>Do you ever stop and wonder how significant Earth really is compared to the rest of the universe? Me too.</p> 
-      <button type="button" class="btn btn-outline-info">
-        <a href="https://www.youtube.com/watch?v=1Eh5BpSnBBw" target="_blank">Blow your mind. </a></button>
-        <br />
-        <br />
+  <div class="container">
+    <div class="jumbotron">
+      <h1>The Giant Universe.</h1> 
+      <p>Do you ever stop and wonder how significant Earth really is compared to the rest of the universe? Me too.</p> 
+        <button type="button" class="btn btn-outline-info">
+          <a href="https://www.youtube.com/watch?v=1Eh5BpSnBBw" target="_blank">Blow your mind. </a></button>
+          <br />
+          <br />
+    </div>
   </div>
-</div>
-<br /> <br />
+  <br /> <br />
 
-<% @planets.each do |planet| %>
-  <div>
-    <h1><%= planet.name %></h1><br />
-    <p><%= planet.description %></p><br />
-  </div>
 
-  <hr />
-<% end %>
+  <% @planets.each do |planet| %>
+    <div class="booyah-box col-10 offset-1">
+      <h3><%= planet.name %></h1>
+      <i><%= planet.description %></i>
+    </div>
+    <br />
+  <% end %>
 
-<br /><br /><br/><br /><br /><br/>
+  <br /><br /><br/><br /><br /><br/>
 
 </html>
