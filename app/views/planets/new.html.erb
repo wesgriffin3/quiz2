@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Planet</h1>
+  <%= simple_form_for @planet do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Create' %>
+  <% end %>
+</div>
